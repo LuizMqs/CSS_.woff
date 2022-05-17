@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Zen Loop";
+    src: url(/fonts/zenloop-regular.woff);
+}
+
+body {
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    background-color: rgba(74, 144, 74, 0.859);
+}
+
+#logo {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#logo h1 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 3vw;
+}
+
+#logo img {
+    width: 4vw;
+}
+
+#nav-bar {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    font-size: 1.5vw;
+    font-family: "Zen Loop";
+    text-decoration: overline;
+    -webkit-text-stroke: 1px;
+}
+
+#nav-bar ul li:hover {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#git {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#git img {
+    width: 3vw;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section div {
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.786);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div a {
+    font-size: 2.5vw;
+    font-family: "Zen Loop";
+    -webkit-text-stroke: 1px;
+    text-decoration: none;
+}
+
+section div a:visited {
+    color: green;
+}
+
+section div a:hover {
+    color: aqua;
+    transition: 0.3s;
+}
+
+section div a:active {
+    color: brown;
+}
